@@ -1,0 +1,30 @@
+{
+  "name": "axios-webdriverio",
+  "version": "1.0.0",
+  "description": "Automation Testing using Axios + Jest for API Testing and WebdriverIO for UI Functional Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alcoto95/axios-webdriverio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alcoto95/axios-webdriverio/issues"
+  },
+  "homepage": "https://github.com/Alcoto95/axios-webdriverio#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "axios": "^0.21.0",
+    "eslint": "^7.12.1",
+    "jest": "^26.6.2",
+    "webdriverio": "^6.7.2"
+  }
+}
