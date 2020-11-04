@@ -6,15 +6,20 @@ class TodoistLoginPage extends BasePage {
     get emailInput() { return $('input.input_email') }
     get passwordInput() { return $('input#password') }
     get submitLoginBtn() { return $('button.submit_btn') }
+    get errorMessage() { return $('.error_msg span') }
 
     open() {
         super.open('')
     }
 
-    loginFlow(email, password) {
+    loginFlow(email = '', password = '') {
         this.loginBtn.click();
-        this.emailInput.setValue(email);
-        this.passwordInput.setValue(password);
+        if(email !== '') {
+            this.emailInput.setValue(email);
+        }
+        if(password !== '') {
+            this.passwordInput.setValue(password);
+        }
         this.submitLoginBtn.click();
     }
 }
